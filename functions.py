@@ -42,6 +42,9 @@ def menu():
     print("8. Aggregate by Customer!  ")
     print("9. Aggregate by Product!  ")
     print("10. Get Product Information!  ")
+    print("11. Get All Customers!  ")
+    print("12. Get All Products! ")
+    print("13. Get All Transactions  ")
 
     print("0. Quit! ")
 
@@ -138,11 +141,40 @@ def sum_of_sales_by_product(id):
                 sum += float(row[4])
 
     return sum
+
+
+def get_all_customers():
+    with open("customers.csv" ,'r' , newline='') as file:
+        reader = csv.reader(file)
+
+        for i in reader:
+            print("List of Customers: ")
+            print(f"ID: {i[0]}, Name: {i[1]}, Last Name: {i[2]}, Email: {i[3]}, Phone {i[4]}")
+
+
+def get_all_products():
+    with open("products.csv" ,'r' , newline='') as file:
+        reader = csv.reader(file)
+
+        for i in reader:
+            print("List of Products: ")
+            print(f"ID: {i[0]}, Name: {i[1]}, Desc: {i[2]}, Price: {i[3]}")
+
+
+def get_all_transactions():
+    with open("transactions.csv" ,'r' , newline='') as file:
+        reader = csv.reader(file)
+
+        for i in reader:
+            print("List of Transactions: ")
+            print(f"ID: {i[0]}, Customer_ID: {i[1]}, Product_ID: {i[2]}, Total: {i[3]}, Time {i[4]}")
  
             
             
 
-
+get_all_customers()
+get_all_products()
+get_all_transactions()
 
 
     

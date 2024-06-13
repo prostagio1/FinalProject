@@ -175,6 +175,12 @@ def main():
                 print("Please enter valid Product key! ")
                 continue
             products.get_product(product_key)
+        elif choice == "11":
+            get_all_customers()
+        elif choice == "12":
+            get_all_products()
+        elif choice == "13":
+            get_all_transactions()
 
 if __name__ == "__main__":
     main()
