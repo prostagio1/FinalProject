@@ -113,8 +113,6 @@ def display_product_info(row):
     print(f"Price {row[3]}")
 
 
-            
-print(get_price("1"))
 
 
 def sum_of_sales_by_customer(id):
@@ -171,10 +169,6 @@ def get_all_transactions():
  
             
             
-
-get_all_customers()
-get_all_products()
-get_all_transactions()
 
 
     

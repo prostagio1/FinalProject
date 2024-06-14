@@ -175,6 +175,8 @@ def main():
                 print("Please enter valid Product key! ")
                 continue
             products.get_product(product_key)
+        
+        #printing out the lists
         elif choice == "11":
             get_all_customers()
         elif choice == "12":
